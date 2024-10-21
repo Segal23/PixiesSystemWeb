@@ -3,300 +3,177 @@
     padding: 0;
 }
 
-body{
-    background-color: #fff;
+body {
+    background-color: #6babbb88;
+        /*6babbb
+        73c8ddaa
+        2aa9a688
+        3ae9e688*/
     font-family:Arial, Helvetica, sans-serif;
     font-size: 10px;
+    color:#19393f;
 }
 
-/*****************************************************************
-                            HEADER
-*****************************************************************/
+/*----------HEADER----------*/
 
-/*****************************************************************
-    header es el contenedor del logo, la lista que contiene los links y el div que no se muestra () está solo para que al utilizar space-between me ponga la lista en el medio) y por tal motivo aplicacmos el display flex sobre él ya que es el padre de esos elementos. También aplicamos aquí el align-items ya que queremos centrar todos los elemenos (items) del header.
-*****************************************************************/
-header{
-    /* background-color: #003785; */
-    background-color: #445;
-    display: flex;  
-    justify-content: space-between;
-    align-items: center;
-    /* border-bottom: 2px solid #3ae9e6; */
-    border-bottom: 2px solid #fff;
+.border-cyan{
+    border: 2px solid #3ae9e6 !important;
+
 }
 
-/*****************************************************************
-    ul es el contenedor los links y por tal motivo aplicacmos el display flex sobre él ya que es el padre de los links
-*****************************************************************/
-header ul{
-    /* background-color: yellow; */
-    list-style: none;
-    display: flex;
+.border-bt-cyan{
+    border-bottom: 2px solid #3ae9e6 !important;
 }
 
-/*****************************************************************
-    el margin lo aplicamos sobre los links para que tengan separación entre ellos
-*****************************************************************/
-header nav a{
-    color: #3ae9e6;
-    /* color: #fff; */
-    font-size: 1.6em;
-    text-decoration: none;
-    margin:5px;
+.fc-cyan-active{
+    color:#3ae9e6 !important;
+    background-color: #3335 ;
 }
 
-.img-logo-pixies{
-    box-sizing: border-box;
-    width: 50px;
-    border: solid;
-    border-color: #fff;
-    margin: 10px;
-} 
-
-/*****************************************************************
-                            HEADER
-*****************************************************************/
-
-
-/*****************************************************************
-                            SECCIONES
-*****************************************************************/
-.seccion-portada-home{
-    display: flex;
-    flex-direction: column;
+.fc-cyan{
+    color:#3ae9e6bb !important;
 }
 
-.img-portada-home, .img-portada-contacto{
-    height: 50vh;
-}
-
-.container-portada-home{
-    background-color: #fff ;
-    border: 2px solid;
-    position: absolute;
-    top: 350px;
-    left: 50px;
-    height: 200px;
-    width: 350px;
-}
-
-.seccion-contenido-home{
-    /* background-color: red; */
-    margin: 100px 0;
-    border: 2px solid #777;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.container-texto-seccion-contenido-home{
-    /* background-color: yellow; */
-    margin: 10px 100px 10px 10px;
-    width: 400px;
-    height: 300px;
-    border: 2px solid #777;
-}
+/*--------HEADER END--------*/
 
 
-.container-img-seccion-contenido-home{
-    /* background-color: green; */
-    display: flex;
-    justify-content: space-between;
-    height: 300px;
-    /* border: 2px solid grey; */
-    margin: 10px;
-}
+/*----SECCIONES CONTACTO----*/
 
-.img1-contenido-home{
-    width: 30%;
-}
-
-.img2-contenido-home{
-    width: 30%;
-}
-.img3-contenido-home{
-    width: 30%;
-}
+/*-------  PORTADA  -------*/
 
 .seccion-portada-contacto{
+    background-image: url("../assets/portada-contacto-3-430.jpg");
+    height: 75vh;
+    background-size:cover;
     display: flex;
     flex-direction: column;
-}
-
-.container-portada-contacto{
-    /* background-color: #fffa; */
-    /* border: 2px solid ; */
-    position: absolute;
-    top: 250px;
-    left: 50px;
-    color:#fffb;
-}
-
-.seccion-contenido-contacto{
-    /* background-color: red; */
-    margin: 50px auto;
-
-}
-
-.texto-portada-contacto{
-    font-size: 4em;
-}
-
-.span-portada-contacto{
-    color: #0ffb;
-}
-
-
-.seccion-contenido-contacto{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 1000px;
-
-}
-
-.div-seccion-contenido-titulo-contacto{
-    /* background-color: yellow; */
-    margin: 10px
-}
-
-.container-seccion-contenido-contacto{
-    /* background-color: blueviolet; */
-    margin: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.div-seccion-contenido-titulo-contacto h2{
-    font-size: 3.5em;
-}
-
-.div-seccion-contenido-titulo-contacto p{
-    font-size: 1.6em;
-    margin: 5px;
-}
-
-.div-seccion-contenido-h3{
-    width: 90%;
-    margin: 15px 0;
-}
-
-.div-seccion-contenido-h3 h3{
-    width: 90%;
-    font-size: 3.5em;
-}
-
-.div-seccion-contenido-form-contacto{
-    background-color: #ddd8;
-    width: 70%;
-    margin-right: 10px;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.div-datos-empresa{
-    background-color: #ccc;
-    width: 30%;
-}
-/*
-.div-datos-empresa img{
-    width: 100%;
-    height: 100%;
-}*/
-
-form{
-    width: 90%;
-    /* border: solid; */
-}
-
-.div-form-row{
-    /* background-color: chartreuse; */
-    display: flex;
-    margin: 15px 0px 15px 5px;
-    justify-content: space-between;
-}
-
-.div-form-col-group{
-    width: 49%;
-    margin-right: 5px;
-}
-
-.div-form-col{
-    margin: 0 0 5px 5px;
-}
-
-input[type="text"], input[type="email"], select, textarea{
-    width: 100%;
-    padding: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-family: inherit;
-    font-size: 1.6em;
-}
-
-textarea{
-    height: 100px;
-    width: 99%;
-    margin-bottom: 15px;
-    font-family: inherit;
-}
-
-.div-agreement-contacto{
-
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
-.div-checkbox-agreement{
-    width: 2.5%;
-    margin: 5px ;
-}
-
-.div-parragraph-agreement{
-    width: 97.5%;
-    margin-bottom: 15px;
-    font-size: 1.6em;
-}
-
-.div-boton-enviar{
-    display: flex;
     justify-content: end;
-    margin: 0 5px 15px 0;
+
 }
 
-input[type="button"]{
-    width: 25%;
-    background-color: #003785;
-    color: #fff;
+.seccion-portada-contacto div{
+    background-color: #0008;
+    height: 150px;
 }
 
-/*****************************************************************
-                            SECCIONES
-*****************************************************************/
+.seccion-portada-contacto h1{
+    color:#fffc;
+    font-size: 3em;
+    text-align: center;
+    padding-top: 1.6em;
+}
 
+.seccion-portada-contacto span{
+    color: #3ae9e6;
+}
 
-/*****************************************************************
-                            FOOTER
-*****************************************************************/
-footer{
-    background-color: #335;
-    display: flex;
+/*-----  PORTADA END  -----*/
+
+/*------  CONTENIDO  ------*/
+
+.seccion-contenido-contacto{
+    margin: 5em auto;
+    display:flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-top: 100px;
-    border-top: 2px solid #777;
+    width: 95%;
 }
 
-.container-logo-redes-footer-home{
+.seccion-contenido-contacto :first-child h2{
+    font-size: 2.8em;
+    color:#19393f;
+}
+
+.seccion-contenido-contacto :first-child p{
+    font-size: 1.6em;
+}
+
+.form-contacto{
+    background-color: #fff9;
+}
+
+.seccion-contenido-contacto :nth-child(2) :first-child h3{
+    width: 95%;
+    padding: 10px;
+    font-size: 2.8em;
+}
+
+.seccion-contenido-contacto :nth-child(2) :first-child form input, 
+.seccion-contenido-contacto :nth-child(2) :first-child form select, 
+.seccion-contenido-contacto :nth-child(2) :first-child form textarea{
+    background-color: #6babbb88;
+    color:#19393f;
+}
+
+.seccion-contenido-contacto :nth-child(2) :first-child form textarea{
+    height: 200px;
+}
+
+.seccion-contenido-contacto :nth-child(2) :first-child form{
+    margin: 0 1px 0 1px;
+}
+
+.seccion-contenido-contacto :nth-child(2) :first-child :nth-child(2) :nth-child(6) {
+    font-size: 1.6em;
+}
+
+.seccion-contenido-contacto :nth-child(2) :first-child :nth-child(2) :nth-child(7) {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    margin: 10px 0;
+
 }
 
-/*****************************************************************
-                            FOOTER
-*****************************************************************/
+.seccion-contenido-contacto :nth-child(2) :first-child :nth-child(2) :nth-child(7) button {
+    width: 50%;
+    background-color: #3335;
+    color: #fffc;
+    font-weight: bold;
+}
+
+/*------ CONTENIDO END -----*/
+
+
+/*--------- FOOTER ---------*/
+
+footer i{
+    color: #3ae9e6;
+    font-size: 30px;
+}
+
+i:hover{
+    color: #6babbb88;
+}
+
+.fc-white{
+    color: #fffd
+}
+
+/*------- FOOTER END -------*/
+
+
+
+@media only screen and (min-width: 640px) {
+    
+    /*------ PORTADA 640px -----*/
+    .seccion-portada-contacto{
+        background-image: url("../assets/portada-contacto-640x960.jpg");
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    /*----- PORTADA 1024px -----*/
+    .seccion-portada-contacto{
+        background-image: url("../assets/portada-contacto-1024x1365.jpg");
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    
+    /*------ PORTADA 1920px -----*/
+    .seccion-portada-contacto{
+        background-image: url("../assets/portada-contacto-1920x1440.jpg");
+    }
+}

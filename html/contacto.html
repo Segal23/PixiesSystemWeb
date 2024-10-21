@@ -1,166 +1,207 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixies Systems - Contáctanos</title>
 
-    <!--Link a hoja de estilos-->
+    <!--Link a la hoja de stilos de Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--Link a font-awsome para los íconos de las redes-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Link a hoja de estilos CSS-->
     <link rel="stylesheet" href="../css/styles.css">
 
 </head>
 <body>
-    
+        
     <header>
 
-        <!--Imagen del logo-->
-        <img class="img-logo-pixies" src="../assets/pixies_logo.jpg" alt="Logo de Pixies">
-        
-        <nav>
+            <nav class="navbar bg-dark border-bottom border-body border-bt-cyan" data-bs-theme="dark" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="../assets/pixies_logo_fondo_opaco.jpg" alt="Logo Pixies" width="50" height="50">
+                    </a>
 
-            <ul>
-                <!--Enlaces del menú navegable-->
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Conctacto</a>
-                </li>
-                <li>
-                    <a href="nosotros.html">Acerca de Nosotros</a>
-                </li>
-                <li>
-                    <a href="servicios.html">Nuestros Servicios</a>
-                </li>
-                <li>
-                    <a href="partners.html">Nuestros Socios Estratégicos</a>
-                </li>
-                
-            </ul>
-            
-        </nav>
-
-        <div class="hidden-div"></div>
-    </header>
-    
-    <main>
-
-        <section class="seccion-portada-contacto">
-        
-            <!--Imagen de portada-->
-            <img class="img-portada-contacto" src="../assets/Contact-min-1.jpg" alt="Imagen de la sección principal">
-
-            <!--Parrafo de la portada-->
-            <div class="container-portada-contacto">
-                <h1 class="texto-portada-contacto">¿Cómo podemos <span class="span-portada-contacto">ayudarlo?</span></h1>
-            </div>
-        
-        </section>
-
-        <section class="seccion-contenido-contacto">
-            
-            <div class="div-seccion-contenido-titulo-contacto">
-            
-                <!--Título de la sección del contenido -->
-                <h2>Contáctenos</h2>
-
-                <!--Párrafo de la sección del contenido-->
-                <p>Por favor, complete el formulario debajo. También puede contactarse telefónicamente o por correo electrónico, y nuestro equipo estará encantado de atender su solicitud.</p>
-            
-            </div>
-            
-            <!--Contendor para los distintos inputs del formulario-->
-            <div class="container-seccion-contenido-contacto">
-                
-                <div class="div-seccion-contenido-form-contacto">
-                    
-                    <div class="div-seccion-contenido-h3">
-                        <h3>Trabajemos juntos</h3>
+                    <button class="navbar-toggler border-cyan" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse mt-3" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link fs-6 fc-cyan" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-6 fc-cyan-active" href="contacto3.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-6 fc-cyan" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-6 fc-cyan" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-6 fc-cyan" href="partners.html">Partners</a>
+                        </li>
                     </div>
-                    
-                    <form>
-                        
-                        <div class="div-form-row">
-                            <div class="div-form-col-group">
-                                <input class="input-contacto-fuente" type="text" placeholder="Nombre*" required>
-                            </div>
-                            
-                            <div class="div-form-col-group">
-                                <input class="input-contacto-fuente" type="text" placeholder="Apellido*" required>
-                            </div>
-                        </div>
-
-                        <div class="div-form-row">
-                            <div class="div-form-col-group">
-                                <input class="input-contacto-fuente" type="email" placeholder="Correo electrónico*" required>
-                            </div>
-
-                            <div class="div-form-col-group">
-                                <select class="input-contacto-fuente" name="Referencia" id="Referencia">
-                                    <option value="Cómo nos ha conocido?">Cómo nos ha conocido?</option>
-                                    <option value="Motor de búsqueda">Motor de búsqueda</option>
-                                    <option value="Redes sociales">Redes sociales</option>
-                                    <option value="Referencia">Referencia</option>
-                                    <option value="Anuncio">Anuncio</option>
-                                    <option value="Evento">Evento</option>
-                                    <option value="Otros">Otros</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="div-form-col">
-                                <textarea name="mensaje" id="mensaje" placeholder="Mensaje*" required></textarea>
-                        </div>
-                        
-                        <div class="div-agreement-contacto">
-                            <div class="div-checkbox-agreement">
-                                <input type="checkbox" name="Suscribe" id="Suscribe">
-                            </div>
-                            <div class="div-parragraph-agreement">
-                                <p>
-                                    Acepto el envío ocacional de noticias e información sobre eventos de Pixies a la casilla de correo electrónico provista.
-                                </p>
-                                <br>
-                                <p>
-                                    Usted puede revocar su consentimiento en cualquier momento. 
-                                </p>
-                            </div>
-                        </div>
-                        <div class="div-boton-enviar">
-                            <input type="button" value="Enviar">
-                        </div>
-                    </form>
-                
-                </div>    
-                
-                <div class="div-datos-empresa">   
-                    <img class="img-formulario" src="" alt="Imágen fondo datos de la empresa">
-                    <p>Parráfo con los datos de la empresa</p>
                 </div>
-                    
-                
+            </nav>
 
+        </header>
 
+        <main>
 
+            <section class="seccion-portada-contacto">
+
+                <div>
+                    <!--Texto de la portada-->
+                    <h1>¿Cómo podemos <span>ayudarlo?</span></h1>
+                </div>
+
+            </section>
+
+            <section class="seccion-contenido-contacto">
+
+                    <div>
+
+                        <!--Título de la sección del contenido -->
+                        <h2>Contáctenos</h2>
+
+                        <!--Párrafo de la sección del contenido-->
+                        <p>Por favor, complete el formulario debajo. También puede contactarse telefónicamente o por correo electrónico, y nuestro equipo estará encantado de atender su solicitud.</p>
+
+                    </div>
+
+                    <div>
+
+                        <div class="form-contacto">
+
+                            <div>
+                                <h3>Trabajemos juntos</h3>
+                            </div>
+
+                            <form class="row g-3">
+
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" id="nombre" placeholder="Nombre*" required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" id="apellido" placeholder="Apellido*" required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" id="email" placeholder="Correo electrónico*" required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <select id="inputState" class="form-select">
+                                        <option selected>Cómo nos ha conocido?</option>
+                                        <option>Motor de búsqueda</option>
+                                        <option>Redes sociales</option>
+                                        <option>Referencia</option>
+                                        <option>Anuncio</option>
+                                        <option>Evento</option>
+                                        <option>Otros</option>
+                                    </select>
+                                </div>
+
+                                <div class="input-group">
+                                    <!-- <span class="input-group-text">With textarea</span> -->
+                                    <textarea class="form-control" required>Mensaje*</textarea>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">Acepto el envío ocacional de noticias e información sobre eventos de Pixies a la casilla de correo electrónico provista.
+                                        <br>
+                                        <br>
+                                        Usted puede revocar su consentimiento en cualquier momento.
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <button type="submit" class="btn">Enviar</button>
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+            </section>
+
+        </main>
+
+        <footer class="bg-dark text-dark pt-5 pb-4 fs-6 fc-cyan-active">
+
+            <div class="container text-center text-md-start">
+
+                <div class="row text-center text-md-start">
+
+                    <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mt-4">
+
+                        <h5 class="text-uppercase mb-4 fw-bold fc-white">Contacto</h5>
+                        <hr class="mb-4">
+                        <p>
+                            <li class="fas fa-location-dot me-3"></li>Bartolomé Mitre 823, Piso 1 Dpto. 1
+                        </p>
+                        <p>
+                            <li class="fas fa-location-dot me-3 text-dark"></li>CP1436, Buenos Aires, Argentina
+                        </p>
+
+                        <p>
+                            <li class="fas fa-phone me-3"></li>
+                            (+54) 11-6180-2925
+                        </p>
+                        <p>
+                            <li class="fas fa-envelope me-3"></li>
+                            contacto@pixies.com.ar
+                        </p>
+
+                    </div>
+
+                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-4">
+                        
+                        <h5 class="text-uppercase mb-4 fw-bold fc-white">Nuestras Redes</h5>
+                        <hr class="mb-4">
+                        <ul class="list-unstyled list-inline mb-5">
+                            <li class="list-inline-item">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <hr class="mb-4">
+
+                    <div class="text-center mb-2 mt-3">
+                        <img src="../assets/pixies_logo_fondo_opaco.jpg" alt="Logo Pixies" width="50" height="50" class="mb-4">
+                        <p>2025 Copyright Pixies Systems. Todos los derechos reservados</p>
+                    </div>
+
+                </div>
             </div>
 
-        </section>
+        </footer>
 
-    </main>
+        <!--Link a los scripts de Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <footer>
-
-        <img class="img-logo-pixies" src="../assets/pixies_logo.jpg" alt="Logo de Pixies">
-    
-        <p>Parrafo del footer</p>
-    
-        <div class="container-logo-redes-footer-home">
-            <img src="../assets/icons8-linkedin-48.png" alt="Imágen de redes 1">
-            <img src="../assets/icons8-facebook-48.png" alt="Imágen de redes 2">
-            <img src="../assets/icons8-whatsapp-48.png" alt="Imágen de redes 3">
-            <img src="../assets/icons8-instagram-48.png" alt="Imagen de redes 4">
-        </div>
-    
-    </footer>
 </body>
-</html> 
+</html>

@@ -42,9 +42,9 @@ body {
 /*-------  PORTADA  -------*/
 
 .seccion-portada-contacto{
-    background-image: url("../assets/portada-contacto-3-430.jpg");
+    background-image: url("../assets/portada/portada-contacto1.jpg");
     height: 75vh;
-    background-size:cover;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -76,17 +76,19 @@ body {
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     width: 95%;
 }
 
 .seccion-contenido-contacto :first-child h2{
     font-size: 2.8em;
     color:#19393f;
+    align-self: start;
 }
 
 .seccion-contenido-contacto :first-child p{
     font-size: 1.6em;
+    align-self: start;
 }
 
 .form-contacto{
@@ -94,7 +96,7 @@ body {
 }
 
 .seccion-contenido-contacto :nth-child(2) :first-child h3{
-    width: 95%;
+    /* width: 95%; */
     padding: 10px;
     font-size: 2.8em;
 }
@@ -146,6 +148,13 @@ i:hover{
     color: #6babbb88;
 }
 
+nav ul li a:hover{
+    background-color: #19393f;
+    border: 2px solid #fff8;
+    border-radius: 5px;
+    padding: 10px;
+}
+
 .fc-white{
     color: #fffd
 }
@@ -154,26 +163,69 @@ i:hover{
 
 
 
+
+@media only screen and (min-width: 480px) {
+    
+    /*------ PORTADA 480px -----*/
+    .seccion-portada-contacto{
+        background-image: url("../assets/portada/portada-contacto3.jpg");
+    }
+}
+
+
 @media only screen and (min-width: 640px) {
     
     /*------ PORTADA 640px -----*/
     .seccion-portada-contacto{
-        background-image: url("../assets/portada-contacto-640x960.jpg");
+        background-image: url("../assets/portada/portada-contacto6.jpg");
+    }
+
+    nav div button{
+        visibility: hidden;
+        order: 1
+    }
+
+    nav div{
+        /* background-color: green; */
+        display: flex !important;
+        justify-content: space-between;
+}
+
+    nav div div{
+        /* background-color: red; */
+        max-width: fit-content;
+    }
+
+    nav div div ul {
+        display: flex !important;
+        flex-direction: row !important;
+        /* background-color: blue; */
+        font-weight: bold;
+    }
+
+    nav div div ul li{
+        padding: 0 15px;        
+    }
+
+    .fc-cyan-active {
+        color:#3ae9e6 !important;
+        background-color: #212529;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    
+    /*----- PORTADA 768px -----*/
+    .seccion-portada-contacto{
+        background-image: url("../assets/portada/portada-contacto9.jpg");
     }
 }
 
 @media only screen and (min-width: 1024px) {
     
-    /*----- PORTADA 1024px -----*/
+    /*----- PORTADA 1024px ----*/
     .seccion-portada-contacto{
-        background-image: url("../assets/portada-contacto-1024x1365.jpg");
+        background-image: url("../assets/portada/portada-contacto12.jpg");
     }
 }
 
-@media only screen and (min-width: 1920px) {
-    
-    /*------ PORTADA 1920px -----*/
-    .seccion-portada-contacto{
-        background-image: url("../assets/portada-contacto-1920x1440.jpg");
-    }
-}

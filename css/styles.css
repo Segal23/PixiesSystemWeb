@@ -42,7 +42,7 @@ body {
 /*-------  PORTADA  -------*/
 
 .seccion-portada-contacto{
-    background-image: url("/assets/portada/portada-contacto1.jpg");
+    background-image: url("assets/portada/portada-contacto1.jpg");
     height: 75vh;
     background-size: cover;
     display: flex;
@@ -168,7 +168,7 @@ nav ul li a:hover{
     
     /*------ PORTADA 480px -----*/
     .seccion-portada-contacto{
-        background-image: url("/assets/portada/portada-contacto3.jpg");
+        background-image: url("assets/portada/portada-contacto3.jpg");
     }
 }
 
@@ -177,7 +177,7 @@ nav ul li a:hover{
     
     /*------ PORTADA 640px -----*/
     .seccion-portada-contacto{
-        background-image: url("/assets/portada/portada-contacto6.jpg");
+        background-image: url("assets/portada/portada-contacto6.jpg");
     }
 
     nav div button{
@@ -217,7 +217,7 @@ nav ul li a:hover{
     
     /*----- PORTADA 768px -----*/
     .seccion-portada-contacto{
-        background-image: url("/assets/portada/portada-contacto9.jpg");
+        background-image: url("assets/portada/portada-contacto9.jpg");
     }
 }
 
@@ -225,7 +225,7 @@ nav ul li a:hover{
     
     /*----- PORTADA 1024px ----*/
     .seccion-portada-contacto{
-        background-image: url("/assets/portada/portada-contacto12.jpg");
+        background-image: url("assets/portada/portada-contacto12.jpg");
     }
 }
 

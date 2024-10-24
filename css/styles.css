@@ -151,9 +151,9 @@ i:hover{
 
 nav ul li a:hover{
     background-color: #19393f;
-    border: 2px solid #fff8;
+    border: 1px solid #fff8;
     border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
 }
 
 .fc-white{

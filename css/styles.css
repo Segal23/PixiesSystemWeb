@@ -38,6 +38,31 @@ body {
 /*--------HEADER END--------*/
 
 
+/*--------- FOOTER ---------*/
+
+footer i{
+    color: #3ae9e6;
+    font-size: 30px;
+}
+
+i:hover{
+    color: #6babbb88;
+}
+
+nav ul li a:hover{
+    background-color: #19393f;
+    border: 1px solid #fff8;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.fc-white{
+    color: #fffd
+}
+
+/*------- FOOTER END -------*/
+
+
 /*----SECCIONES CONTACTO----*/
 
 /*-------  PORTADA  -------*/
@@ -137,39 +162,116 @@ body {
 
 /*------ CONTENIDO END -----*/
 
+/*--SECCIONES CONTACTO END--*/
 
-/*--------- FOOTER ---------*/
 
-footer i{
+
+/*----SECCIONES HOME PAGE---*/
+
+/*-------  PORTADA  --------*/
+
+.seccion-portada-home{
+    background-image: url("../assets/portada/portada-home1.jpg");
+    height: 75vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+}
+
+.seccion-portada-home div{
+    background-color: #0008;
+    height: 150px;
+}
+
+.seccion-portada-home h1{
+    color:#fffc;
+    font-size: 3em;
+    text-align: center;
+    padding-top: 1.6em;
+}
+
+.seccion-portada-home span{
     color: #3ae9e6;
-    font-size: 30px;
 }
 
-i:hover{
-    color: #6babbb88;
+/*-------  PORTADA  --------*/
+
+/*------  CONTENIDO  ------*/
+
+.seccion-contenido-home{
+    margin: 5em auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 95%;
 }
 
-nav ul li a:hover{
-    background-color: #19393f;
-    border: 1px solid #fff8;
-    border-radius: 5px;
-    padding: 5px;
+.seccion-contenido-home :first-child h2{
+    font-size: 2.8em;
+    color:#19393f;
+    align-self: start;
 }
 
-.fc-white{
-    color: #fffd
+.seccion-contenido-home :first-child p{
+    font-size: 1.6em;
+    align-self: start;
 }
 
-/*------- FOOTER END -------*/
+.container-img-contenido-home{
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: repeat(3, 1fr);
+    height: 120vh; 
+    gap: 10px
+}
+
+.container-img-contenido-home :first-child{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: url("../assets/contenido-home1.jpg");
+    background-size: cover;
+}
+
+.container-img-contenido-home :nth-child(2){
+    grid-column: 1/2; 
+    grid-row: 2/3;
+    background-image: url("../assets/contenido-home2.jpg");
+    background-size: cover;
+}
+
+.container-img-contenido-home :last-child{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-image: url("../assets/contenido-home3.jpg");
+    background-size: cover;
+}
+
+.seccion-contenido-home :last-child p{
+    margin-top: 10px;
+    font-size: 1.6em;
+    align-self: start;
+}
+
+/*-----  CONTENIDO END -----*/
+
+/*--SECCIONES HOME PAGE END-*/
 
 
 
+/*------ MEDIA QUERYS ------*/
 
 @media only screen and (min-width: 480px) {
     
     /*------ PORTADA 480px -----*/
     .seccion-portada-contacto{
         background-image: url("../assets/portada/portada-contacto3.jpg");
+    }
+
+    .seccion-portada-home{
+        background-image: url("../assets/portada/portada-home2.jpg") !important;
     }
 }
 
@@ -179,6 +281,10 @@ nav ul li a:hover{
     /*------ PORTADA 640px -----*/
     .seccion-portada-contacto{
         background-image: url("../assets/portada/portada-contacto6.jpg");
+    }
+
+    .seccion-portada-home{
+        background-image: url("../assets/portada/portada-home3.jpg") !important;
     }
 
     nav div button{
@@ -212,6 +318,27 @@ nav ul li a:hover{
         color:#3ae9e6 !important;
         background-color: #212529;
     }
+
+    .container-img-contenido-home{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        height: 50vh;
+    }
+    
+    .container-img-contenido-home :first-child{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .container-img-contenido-home :nth-child(2){
+        grid-column: 2/3; 
+        grid-row: 1/2;
+    }
+    
+    .container-img-contenido-home :last-child{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }   
 }
 
 @media only screen and (min-width: 768px) {
@@ -219,6 +346,10 @@ nav ul li a:hover{
     /*----- PORTADA 768px -----*/
     .seccion-portada-contacto{
         background-image: url("../assets/portada/portada-contacto9.jpg");
+    }
+
+    .seccion-portada-home{
+        background-image: url("../assets/portada/portada-home4.jpg") !important;
     }
 }
 
@@ -228,5 +359,10 @@ nav ul li a:hover{
     .seccion-portada-contacto{
         background-image: url("../assets/portada/portada-contacto12.jpg");
     }
+
+    .seccion-portada-home{
+        background-image: url("../assets/portada/portada-home5.jpg") !important;
+    }
 }
 
+/*---- MEDIA QUERYS END ----*/

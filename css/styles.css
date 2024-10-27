@@ -331,22 +331,12 @@ nav ul li a:hover{
     align-self: start;
 }
 
-.carousel-caption{
-    background-color: #000a;
-    align-self: center;
-}
-
-.carousel-item h5, .carousel-item p{
-    color: #fff;
-}
-
 .seccion-contenido-nosotros h4{
     margin-top: 1em;
     font-size: 2.4em;
     color:#19393f;
     align-self: center;
 }
-
 
 /*----- CONTENIDO END ------*/
 

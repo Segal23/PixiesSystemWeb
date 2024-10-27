@@ -24,14 +24,15 @@
             
             <div class="container-fluid">
                 
-                <a class="navbar-brand" href="#">
-                    <img src="../assets/pixies_logo_fondo_opaco.jpg" alt="Logo Pixies" width="50" height="50">
-                </a>
+                <!--Logo de Pixies-->
+                <img src="../assets/pixies_logo_fondo_opaco.jpg" alt="Logo Pixies" title="Logo de Pixies"  width="50" height="50">
 
+                <!--Botón del Menú hamburguesa-->
                 <button class="navbar-toggler border-cyan" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
+                <!--Links del menú-->
                 <div class="collapse navbar-collapse mt-3" id="navbarSupportedContent">
                     
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -68,13 +69,12 @@
     <main>
 
         <section class="seccion-portada-nosotros">
-        
-            <!--Imagen de portada-->
-            <img class="img-portada-nosotros" src="" alt="Imagen de la sección principal">
 
             <!--Parrafo de la portada-->
-            <div class="container-portada-nosotros">
-                <h1 class="texto-portada-nosotros">Titulo dela sección principal</h1>
+            <div>
+                <div>
+                    <h1>Brindamos <span>Soluciones</span> y Creamos <span>Oportunidades</span></h1>
+                </div>
             </div>
         
         </section>
@@ -82,15 +82,52 @@
         <section class="seccion-contenido-nosotros">
             
             <!--Título de la sección del contenido -->
-            <h2>Titulo de la sección</h2>
+            <h2>Tu Socio en Innovación y Estrategia</h2>
 
             <!--Párrafo de la sección del contenido-->
-            <p>Párrafo de la sección del contenido</p>
+            <p>            
+                Fundada en 2020, Pixies es una empresa joven que ha crecido rápidamente, impulsada por un enfoque dinámico y una dedicación incansable para ayudar a nuestros clientes a alcanzar sus metas. A pesar de nuestra corta trayectoria, hemos logrado construir una sólida base de clientes satisfechos y casos de éxito que reflejan nuestro compromiso con la excelencia. Nos enorgullece no solo brindar soluciones, sino también generar oportunidades de innovación y desarrollo para todos nuestros clientes y colaboradores.
+                <br>
+                <br>
+                En Pixies, creemos que cada reto es una oportunidad para crecer. Nos dedicamos a crear software a medida y a asesorar en todas las áreas de negocio, ayudando a nuestros clientes a optimizar sus procesos operativos y expandir sus capacidades en el comercio electrónico. Nuestro equipo de profesionales trabaja incansablemente para entender las necesidades de cada cliente y ofrecer soluciones integrales que potencien sus negocios.
+                <br>
+                <br>
+                Para nosotros, la innovación es clave, y estamos constantemente buscando nuevas ideas y estrategias que permitan a nuestros clientes alcanzar sus objetivos. Ya sea mediante el desarrollo de plataformas personalizadas, el asesoramiento en estrategia de negocio, o la mejora de sus procesos internos, en Pixies estamos comprometidos a hacer de cada proyecto un nuevo caso de éxito.
+            </p>
+            <h3>
+                Nuestros Pilares
+            </h3>
+            <p>
+                En Pixies, nuestra misión se apoya en tres pilares esenciales que guían cada aspecto de nuestro trabajo. Estos principios reflejan nuestro compromiso con la innovación, la cercanía con nuestros clientes y la excelencia en cada proyecto que emprendemos. Creemos que, al mantenernos fieles a estos valores, creamos un impacto duradero y positivo en los negocios de quienes confían en nosotros."
+            </p>
 
-            <div class="container-seccion-contenido-nosotros">
-                <img class="img1-contenido-nosotros" src="" alt="Imágen 1 del contenido">
-                <img class="img2-contenido-nosotros" src="" alt="Imágen 2 del contenido">
-                <img class="img3-contenido-nosotros" src="" alt="Imágen 3 del contenido">
+            <h4>¡Click en el carousel para ver cada uno de nuestros pilares!</h4>
+
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../assets/nosotros-compromiso-texto-blanco.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/nosotros-compromiso-texto-blanco.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/nosotros-innovacion-texto-blanco.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
 
         </section>
@@ -103,6 +140,7 @@
 
             <div class="row text-center text-md-start">
 
+                <!--Datos de contacto-->
                 <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mt-4">
 
                     <h5 class="text-uppercase mb-4 fw-bold fc-white">Contacto</h5>
@@ -125,6 +163,7 @@
 
                 </div>
 
+                <!--Links a las redes sociales-->
                 <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-4">
                     
                     <h5 class="text-uppercase mb-4 fw-bold fc-white">Nuestras Redes</h5>
@@ -150,8 +189,11 @@
                 <hr class="mb-4">
 
                 <div class="text-center mb-2 mt-3">
-                    <img src="../assets/pixies_logo_fondo_opaco.jpg" alt="Logo Pixies" width="50" height="50" class="mb-4">
+                    
+                    <!--Logo de Pixies-->
+                    <img src="../assets/pixies_logo_fondo_opaco.jpg" alt="Logo Pixies" title="Logo de Pixies" width="50" height="50" class="mb-4">
                     <p>2025 Copyright Pixies Systems. Todos los derechos reservados</p>
+                
                 </div>
 
             </div>

@@ -109,7 +109,6 @@ nav ul li a:hover{
 
 .seccion-contenido-home :first-child h2{
     font-size: 2.8em;
-    color:#19393f;
     align-self: start;
 }
 
@@ -204,7 +203,6 @@ nav ul li a:hover{
 
 .seccion-contenido-contacto :first-child h2{
     font-size: 2.8em;
-    color:#19393f;
     align-self: start;
 }
 
@@ -315,7 +313,6 @@ nav ul li a:hover{
 
 .seccion-contenido-nosotros h2{
     font-size: 2.8em;
-    color:#19393f;
     align-self: start;
 }
 
@@ -327,20 +324,175 @@ nav ul li a:hover{
 .seccion-contenido-nosotros h3{
     margin-top: 1em;
     font-size: 2.8em;
-    color:#19393f;
     align-self: start;
 }
 
 .seccion-contenido-nosotros h4{
     margin-top: 1em;
     font-size: 2.4em;
-    color:#19393f;
     align-self: center;
 }
 
 /*----- CONTENIDO END ------*/
 
 /*--SECCIONES NOSOTROS END--*/
+
+
+
+/*----SECCIONES SERVICIOS---*/
+
+/*--------- PORTADA --------*/
+
+.seccion-portada-servicios{
+    background-image: url("../assets/portada/portada-servicios1.jpg");
+    height: 75vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.seccion-portada-servicios div{
+    background-color: #0008;
+    height: 150px;
+}
+
+
+.seccion-portada-servicios h1{
+    color:#fffc;
+    font-size: 3em;
+    text-align: center;
+    padding-top: 1.6em;
+}
+
+.seccion-portada-servicios span{
+    color: #3ae9e6;
+}
+
+/*------- PORTADA END ------*/
+
+
+/*-------- CONTENIDO -------*/
+
+.seccion-contenido-servicios{
+    margin: 5em auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.seccion-contenido-servicios h2{
+    font-size: 2.8em;
+    align-self: start;
+}
+
+.seccion-contenido-servicios p{
+    font-size: 1.6em;
+    align-self: start;
+}
+
+.seccion-contenido-servicios .tarjetas{
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    justify-items: center;
+    row-gap: 20px;
+}
+
+.seccion-contenido-servicios .tarjeta{
+    width: 100%;
+    max-width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff9;
+}
+
+.seccion-contenido-servicios .tarjeta-img{
+    background-size: cover;
+    width: 100%;
+    height: 40%;
+}
+
+.seccion-contenido-servicios .tarjeta-texto{
+    width: 95%;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion-contenido-servicios .tarjeta-texto h3{
+    font-size: 2em;
+}
+
+.seccion-contenido-servicios .tarjeta-texto p{
+    font-size: 1.2em;
+}
+
+.seccion-contenido-servicios .item1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.seccion-contenido-servicios .item1 .tarjeta-img{
+    background-image: url("../assets/contenido-servicios1.jpg");
+}
+
+.seccion-contenido-servicios .item2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.seccion-contenido-servicios .item2 .tarjeta-img{
+    background-image: url("../assets/contenido-servicios2.jpg");
+}
+
+.seccion-contenido-servicios .item3{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.seccion-contenido-servicios .item3 .tarjeta-img{
+    background-image: url("../assets/contenido-servicios3.jpg");
+}
+
+.seccion-contenido-servicios .item4{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.seccion-contenido-servicios .item4 .tarjeta-img{
+    background-image: url("../assets/portada-servicios.webp");
+}
+
+
+.seccion-contenido-servicios .item5{
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+.seccion-contenido-servicios .item5 .tarjeta-img{
+    background-image: url("../assets/portada-servicios.webp");
+}
+
+.seccion-contenido-servicios .item6{
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+
+.seccion-contenido-servicios .item6 .tarjeta-img{
+    background-image: url("../assets/portada-servicios.webp");
+}
+
+
+/*----- CONTENIDO END ------*/
+
+/*-SECCIONES SERIVICIOS END-*/
 
 
 
@@ -359,6 +511,10 @@ nav ul li a:hover{
 
     .seccion-portada-nosotros{
         background-image: url("../assets/portada/portada-nosotros2.jpg") !important;
+    }
+
+    .seccion-portada-servicios{
+        background-image: url("../assets/portada/portada-servicios2.jpg") !important;
     }
 }
 
@@ -379,6 +535,10 @@ nav ul li a:hover{
         background-image: url("../assets/portada/portada-nosotros3.jpg") !important;
     }
 
+    .seccion-portada-servicios{
+        background-image: url("../assets/portada/portada-servicios3.jpg") !important;
+    }
+    
     nav div button{
         visibility: hidden;
         order: 1
@@ -432,9 +592,49 @@ nav ul li a:hover{
         grid-row: 1/2;
     } 
     
+    /*SE CAMBIA EL ANCHO DEL CAROUSEL 
+    PARA QUE SEA TAN GRANDE Y SE CENTRA*/
     .carousel{
         width: 80%;
         align-self: center;
+    }
+
+    /*SE CAMBIA LA GRILLA DE SERVICIOS DE 
+    1 COL Y 2 FILAS A 2 COL Y 3 FILAS*/
+    .seccion-contenido-servicios .tarjetas{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px
+    } 
+
+    .seccion-contenido-servicios .item1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .seccion-contenido-servicios .item2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .seccion-contenido-servicios .item3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .seccion-contenido-servicios .item4{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .seccion-contenido-servicios .item5{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    .seccion-contenido-servicios .item6{
+        grid-column: 2/3;
+        grid-row: 3/4;
     }
 }
 
@@ -452,6 +652,10 @@ nav ul li a:hover{
     .seccion-portada-nosotros{
         background-image: url("../assets/portada/portada-nosotros4.jpg") !important;
     }
+
+    .seccion-portada-servicios{
+        background-image: url("../assets/portada/portada-servicios4.jpg") !important;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -467,6 +671,48 @@ nav ul li a:hover{
 
     .seccion-portada-nosotros{
         background-image: url("../assets/portada/portada-nosotros5.jpg") !important;
+    }
+
+    .seccion-portada-servicios{
+        background-image: url("../assets/portada/portada-servicios5.jpg") !important;
+    }
+
+    /*SE CAMBIA LA GRILLA DE SERVICIOS DE 
+    1 COL Y 2 FILAS A 2 COL Y 3 FILAS*/
+    .seccion-contenido-servicios .tarjetas{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px
+    } 
+
+    .seccion-contenido-servicios .item1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .seccion-contenido-servicios .item2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .seccion-contenido-servicios .item3{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .seccion-contenido-servicios .item4{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .seccion-contenido-servicios .item5{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    .seccion-contenido-servicios .item6{
+        grid-column: 3/4;
+        grid-row: 2/3;
     }
 }
 

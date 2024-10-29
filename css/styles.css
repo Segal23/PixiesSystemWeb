@@ -69,7 +69,7 @@ nav ul li a:hover{
 /*-------  PORTADA  --------*/
 
 .seccion-portada-home{
-    background-image: url("../assets/portada/portada-home1.jpg");
+    background-image: url("../assets/portada/portada-home1b.jpg");
     height: 75vh;
     background-size: cover;
     display: flex;
@@ -163,7 +163,7 @@ nav ul li a:hover{
 /*-------  PORTADA  -------*/
 
 .seccion-portada-contacto{
-    background-image: url("../assets/portada/portada-contacto1.jpg");
+    background-image: url("../assets/portada/portada-contacto1b.jpg");
     height: 75vh;
     background-size: cover;
     display: flex;
@@ -467,7 +467,7 @@ nav ul li a:hover{
 }
 
 .seccion-contenido-servicios .item4 .tarjeta-img{
-    background-image: url("../assets/portada-servicios.webp");
+    background-image: url("../assets/contenido-servicios4.jpg");
 }
 
 
@@ -477,7 +477,7 @@ nav ul li a:hover{
 }
 
 .seccion-contenido-servicios .item5 .tarjeta-img{
-    background-image: url("../assets/portada-servicios.webp");
+    background-image: url("../assets/contenido-servicios5.jpg");
 }
 
 .seccion-contenido-servicios .item6{
@@ -486,13 +486,97 @@ nav ul li a:hover{
 }
 
 .seccion-contenido-servicios .item6 .tarjeta-img{
-    background-image: url("../assets/portada-servicios.webp");
+    background-image: url("../assets/contenido-servicios6.jpg");
 }
-
 
 /*----- CONTENIDO END ------*/
 
 /*-SECCIONES SERIVICIOS END-*/
+
+
+
+/*----SECCIONES PARTNERS---*/
+
+/*--------- PORTADA --------*/
+
+.seccion-portada-partners{
+    background-image: url("../assets/portada/portada-partners1b.jpg");
+    height: 75vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.seccion-portada-partners div{
+    background-color: #0008;
+    height: 150px;
+}
+
+
+.seccion-portada-partners h1{
+    color:#fffc;
+    font-size: 3em;
+    text-align: center;
+    padding-top: 1.6em;
+}
+
+.seccion-portada-partners span{
+    color: #3ae9e6;
+}
+
+/*------- PORTADA END ------*/
+
+
+/*-------- CONTENIDO -------*/
+
+.seccion-contenido-partners{
+    margin: 5em auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.seccion-contenido-partners h2{
+    font-size: 2.8em;
+    align-self: start;
+}
+
+.seccion-contenido-partners p{
+    font-size: 1.6em;
+    align-self: start;
+    color:#19393f;
+}
+
+.accordion-partners{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.accordion{
+    margin-top: 2em;
+    width: 100%;
+}
+
+.seccion-contenido-partners :not(.header1) img{
+    height: 40px;
+}
+
+.seccion-contenido-partners .header1 img {
+    height: 45px;
+}
+
+.seccion-contenido-partners .accordion-button, 
+.seccion-contenido-partners .accordion-item{
+    background-color: #fff9;
+}
+
+/*----- CONTENIDO END ------*/
+
+/*--SECCIONES PARTNERS END--*/
+
 
 
 
@@ -501,12 +585,12 @@ nav ul li a:hover{
 @media only screen and (min-width: 480px) {
     
     /*------ PORTADA 480px -----*/
-    .seccion-portada-contacto{
-        background-image: url("../assets/portada/portada-contacto3.jpg");
+    .seccion-portada-home{
+        background-image: url("../assets/portada/portada-home2b.jpg") !important;
     }
 
-    .seccion-portada-home{
-        background-image: url("../assets/portada/portada-home2.jpg") !important;
+    .seccion-portada-contacto{
+        background-image: url("../assets/portada/portada-contacto2b.jpg");
     }
 
     .seccion-portada-nosotros{
@@ -516,6 +600,10 @@ nav ul li a:hover{
     .seccion-portada-servicios{
         background-image: url("../assets/portada/portada-servicios2.jpg") !important;
     }
+
+    .seccion-portada-partners{
+        background-image: url("../assets/portada/portada-partners2b.jpg") !important;
+    }
 }
 
 
@@ -523,12 +611,12 @@ nav ul li a:hover{
 @media only screen and (min-width: 640px) {
     
     /*------ PORTADA 640px -----*/
-    .seccion-portada-contacto{
-        background-image: url("../assets/portada/portada-contacto6.jpg");
+    .seccion-portada-home{
+        background-image: url("../assets/portada/portada-home3b.jpg") !important;
     }
 
-    .seccion-portada-home{
-        background-image: url("../assets/portada/portada-home3.jpg") !important;
+    .seccion-portada-contacto{
+        background-image: url("../assets/portada/portada-contacto3b.jpg");
     }
 
     .seccion-portada-nosotros{
@@ -539,6 +627,14 @@ nav ul li a:hover{
         background-image: url("../assets/portada/portada-servicios3.jpg") !important;
     }
     
+    .seccion-portada-partners{
+        background-image: url("../assets/portada/portada-partners3b.jpg") !important;
+    }
+    
+    /*SE CAMBIA EL NAV PARA ADAPTARLO A 
+    PANTALLAS GRANDES. SE MUESTRAN LOS 
+    LINKS EN LA PARTE SUPERIOR EN LUGAR DE 
+    MOSTRARLOS DENTRO DEL MENÚ HAMBURGUESA*/
     nav div button{
         visibility: hidden;
         order: 1
@@ -571,6 +667,10 @@ nav ul li a:hover{
         background-color: #212529;
     }
 
+    /*SE CAMBIA DE CONTENIDO DEL HOME
+    PARA ADAPTAR A PANTALLAS GRANDES, 
+    EN LUGAR DE 3 FILAS Y 1 COLUMNA SE 
+    USA 1 FILA Y 3 COLUMNAS*/
     .container-img-contenido-home{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
@@ -592,6 +692,13 @@ nav ul li a:hover{
         grid-row: 1/2;
     } 
     
+    /*SE AJUSTA EL TAMAÑO DEL BOTON 
+    ENVIAR YA QUE EN PANTALLAS GRANDES 
+    EL TAMAÑO QUEDA GRANDE*/
+    .seccion-contenido-contacto :nth-child(2) :first-child :nth-child(2) :nth-child(7) button {
+        width: 25%;
+    }
+
     /*SE CAMBIA EL ANCHO DEL CAROUSEL 
     PARA QUE SEA TAN GRANDE Y SE CENTRA*/
     .carousel{
@@ -636,17 +743,24 @@ nav ul li a:hover{
         grid-column: 2/3;
         grid-row: 3/4;
     }
+
+    /*SE REDUCE EL ANCHO DEL CONTROL 
+    PARA QUE NO QUEDE TAN GRANDE EN 
+    PANTALLAS DE MAYOR RESOLUCIÓN*/
+    .accordion{
+        width: 80%;
+    }
 }
 
 @media only screen and (min-width: 768px) {
     
     /*----- PORTADA 768px -----*/
-    .seccion-portada-contacto{
-        background-image: url("../assets/portada/portada-contacto9.jpg");
+    .seccion-portada-home{
+        background-image: url("../assets/portada/portada-home4b.jpg") !important;
     }
 
-    .seccion-portada-home{
-        background-image: url("../assets/portada/portada-home4.jpg") !important;
+    .seccion-portada-contacto{
+        background-image: url("../assets/portada/portada-contacto4b.jpg");
     }
 
     .seccion-portada-nosotros{
@@ -656,17 +770,21 @@ nav ul li a:hover{
     .seccion-portada-servicios{
         background-image: url("../assets/portada/portada-servicios4.jpg") !important;
     }
+
+    .seccion-portada-partners{
+        background-image: url("../assets/portada/portada-partners4b.jpg") !important;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
     
     /*----- PORTADA 1024px ----*/
-    .seccion-portada-contacto{
-        background-image: url("../assets/portada/portada-contacto12.jpg");
+    .seccion-portada-home{
+        background-image: url("../assets/portada/portada-home5b.jpg") !important;
     }
 
-    .seccion-portada-home{
-        background-image: url("../assets/portada/portada-home5.jpg") !important;
+    .seccion-portada-contacto{
+        background-image: url("../assets/portada/portada-contacto5b.jpg");
     }
 
     .seccion-portada-nosotros{
@@ -675,6 +793,10 @@ nav ul li a:hover{
 
     .seccion-portada-servicios{
         background-image: url("../assets/portada/portada-servicios5.jpg") !important;
+    }
+
+    .seccion-portada-partners{
+        background-image: url("../assets/portada/portada-partners5b.jpg") !important;
     }
 
     /*SE CAMBIA LA GRILLA DE SERVICIOS DE 
@@ -713,6 +835,13 @@ nav ul li a:hover{
     .seccion-contenido-servicios .item6{
         grid-column: 3/4;
         grid-row: 2/3;
+    }
+    
+    /*SE REDUCE EL ANCHO DEL CONTROL 
+    PARA QUE NO QUEDE TAN GRANDE EN 
+    PANTALLAS DE MAYOR RESOLUCIÓN*/
+    .accordion{
+        width: 60%;
     }
 }
 

@@ -257,19 +257,19 @@ i:hover {
 .seccion-contenido-home .container-img div:first-child {
   grid-column: 0.5;
   grid-row: 0.5;
-  background-image: url("./../../assets/contenido-home1.jpg");
+  background-image: url("../../assets/contenido-home1.jpg");
   background-size: cover;
 }
 .seccion-contenido-home .container-img div:nth-child(2) {
   grid-column: 0.5;
   grid-row: 0.6666666667;
-  background-image: url("./../../assets/contenido-home2.jpg");
+  background-image: url("../../assets/contenido-home2.jpg");
   background-size: cover;
 }
 .seccion-contenido-home .container-img div:last-child {
   grid-column: 0.5;
   grid-row: 0.75;
-  background-image: url("./../../assets/contenido-home3.jpg");
+  background-image: url("../../assets/contenido-home3.jpg");
   background-size: cover;
 }
 .seccion-contenido-home p:last-child {

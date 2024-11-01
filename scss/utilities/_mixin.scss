@@ -55,7 +55,7 @@
 @mixin grid-img($grid-column, $grid-row, $image){
     grid-column: $grid-column;
     grid-row: $grid-row;
-    background-image: url($image);
+    background-image: url("$image");
     background-size: cover;
 }
 
@@ -67,14 +67,14 @@
     gap: 10px;
 
     div:first-child{
-        @include grid-img(1/2, 1/2,  "../assets/contenido-home1.jpg");
+        @include grid-img(1/2, 1/2,  "../../assets/contenido-home1.jpg");
     }
 
     div:nth-child(2){
-        @include grid-img(1/2, 2/3, "../assets/contenido-home2.jpg");
+        @include grid-img(1/2, 2/3, "../../assets/contenido-home2.jpg");
     }
 
     div:last-child{
-        @include grid_img(1/2, 3/4, "../assets/contenido-home3.jpg");
+        @include grid_img(1/2, 3/4, "../../assets/contenido-home3.jpg");
     }
 }

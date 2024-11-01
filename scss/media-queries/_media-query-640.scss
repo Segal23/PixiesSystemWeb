@@ -1,0 +1,175 @@
+@media only screen and (min-width: 640px) {
+    
+    /*------ PORTADA 640px -----*/
+    .seccion-portada-home{
+        background-image: url("../assets/portada/portada-home3b.jpg") !important;
+    }
+
+    .seccion-portada-contacto{
+        background-image: url("../assets/portada/portada-contacto3b.jpg") !important;
+    }
+
+    .seccion-portada-nosotros{
+        background-image: url("../assets/portada/portada-nosotros3.jpg") !important;
+    }
+
+    .seccion-portada-servicios{
+        background-image: url("../assets/portada/portada-servicios3.jpg") !important;
+    }
+    
+    .seccion-portada-partners{
+        background-image: url("../assets/portada/portada-partners3b.jpg") !important;
+    }
+    
+    /*SE CAMBIA EL NAV PARA ADAPTARLO A 
+    PANTALLAS GRANDES. SE MUESTRAN LOS 
+    LINKS EN LA PARTE SUPERIOR EN LUGAR DE 
+    MOSTRARLOS DENTRO DEL MENÚ HAMBURGUESA*/
+    nav {
+        div {
+            button{
+                visibility: hidden;
+                order: 1
+            }
+        }
+    }
+
+    nav{
+        div{
+            display: flex !important;
+            justify-content: space-between;
+        }
+    }
+
+    nav{ 
+        div{
+            div{
+                max-width: fit-content;
+            }
+        }
+    }
+
+    nav{
+        div{
+            div{
+                ul{
+                    display: flex !important;
+                    flex-direction: row !important;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    nav{ 
+        div{
+            div{
+                ul{ 
+                    li{
+                        padding: 0 15px;
+                    }
+                }
+            }
+        }       
+    }
+
+    .fc-cyan-active {
+        color:#3ae9e6 !important;
+        background-color: #212529;
+    }
+
+    /*SE CAMBIA DE CONTENIDO DEL HOME
+    PARA ADAPTAR A PANTALLAS GRANDES, 
+    EN LUGAR DE 3 FILAS Y 1 COLUMNA SE 
+    USA 1 FILA Y 3 COLUMNAS*/
+    .container-img{
+        grid-template-columns: repeat(3, 1fr) !important;
+        grid-template-rows: 1fr !important;
+        height: 50vh !important;
+
+        div:first-child{
+            grid-column: 1/2 ;
+            grid-row: 1/2;
+        }
+
+        div:nth-child(2){
+            grid-column: 2/3 ; 
+            grid-row: 1/2 ;
+        }
+
+        div:last-child{
+            grid-column: 3/4 ;
+            grid-row: 1/2 ;
+        }
+    } 
+    
+    /*SE AJUSTA EL TAMAÑO DEL BOTON 
+    ENVIAR YA QUE EN PANTALLAS GRANDES 
+    EL TAMAÑO QUEDA GRANDE*/
+    .form-contacto{
+        form{
+            div:last-child{
+                button{
+                    width: 25%;
+                }
+            }
+        }
+    }
+
+    /*SE CAMBIA EL ANCHO DEL CAROUSEL 
+    PARA QUE SEA TAN GRANDE Y SE CENTRA*/
+    .carousel{
+        width: 80%;
+        align-self: center;
+    }
+
+    /*SE CAMBIA LA GRILLA DE SERVICIOS DE 
+    1 COL Y 2 FILAS A 2 COL Y 3 FILAS*/
+    .tarjetas{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    } 
+
+    .tarjetas .item1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .tarjetas .item2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .tarjetas .item3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .tarjetas .item4{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .tarjetas .item5{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    .tarjetas .item6{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    /*ALTERNATIVA*/
+    // @include card-items(1, "../assets/contenido-servicios1.jpg", "tablet");
+    // @include card-items(2, "../assets/contenido-servicios2.jpg", "tablet");
+    // @include card-items(3,"../assets/contenido-servicios3.jpg", "tablet");
+    // @include card-items(4, "../assets/contenido-servicios4.jpg", "tablet");
+
+    /*SE REDUCE EL ANCHO DEL CONTROL 
+    PARA QUE NO QUEDE TAN GRANDE EN 
+    PANTALLAS DE MAYOR RESOLUCIÓN*/
+    .accordion{
+        width: 80%;
+    }
+}

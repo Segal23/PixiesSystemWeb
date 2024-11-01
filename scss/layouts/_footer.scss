@@ -1,0 +1,14 @@
+@import "../utilities/variables";
+
+footer i{
+    color: $hdr-fc-active;
+    font-size: $foot-f-size;
+}
+
+i:hover{
+    color: body-bgc;
+}
+
+.fc-white{
+    color: $foot-fc-white;
+}

@@ -1,0 +1,15 @@
+@import "../utilities/variables";
+
+//RESET
+*{
+    margin: 0;
+    padding: 0;
+}
+
+//BODY
+body {
+    background-color: $body-bgc;
+    font-family: $body-ff;
+    font-size: $body-font-size;
+    color: $body-fc;
+}

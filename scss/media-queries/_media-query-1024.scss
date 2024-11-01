@@ -1,0 +1,76 @@
+@media only screen and (min-width: 1024px) {
+    
+    /*----- PORTADA 1024px ----*/
+    .seccion-portada-home{
+        background-image: url("../assets/portada/portada-home5b.jpg") !important;
+    }
+
+    .seccion-portada-contacto{
+        background-image: url("../assets/portada/portada-contacto5b.jpg");
+    }
+
+    .seccion-portada-nosotros{
+        background-image: url("../assets/portada/portada-nosotros5.jpg") !important;
+    }
+
+    .seccion-portada-servicios{
+        background-image: url("../assets/portada/portada-servicios5.jpg") !important;
+    }
+
+    .seccion-portada-partners{
+        background-image: url("../assets/portada/portada-partners5b.jpg") !important;
+    }
+
+    /*SE CAMBIA LA GRILLA DE SERVICIOS DE 
+    1 COL Y 2 FILAS A 2 COL Y 3 FILAS*/
+    .seccion-contenido-servicios .tarjetas{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px
+    } 
+
+    .seccion-contenido-servicios .item1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .seccion-contenido-servicios .item2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .seccion-contenido-servicios .item3{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .seccion-contenido-servicios .item4{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .seccion-contenido-servicios .item5{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    .seccion-contenido-servicios .item6{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    /*ALTERNATIVA*/
+    // @include card-items(1, "../assets/contenido-servicios1.jpg", "desktop");
+    // @include card-items(2, "../assets/contenido-servicios2.jpg", "desktop");
+    // @include card-items(3,"../assets/contenido-servicios3.jpg", "desktop");
+    // @include card-items(4, "../assets/contenido-servicios4.jpg", "desktop");
+
+
+    
+    /*SE REDUCE EL ANCHO DEL CONTROL 
+    PARA QUE NO QUEDE TAN GRANDE EN 
+    PANTALLAS DE MAYOR RESOLUCIÓN*/
+    .accordion{
+        width: 60%;
+    }
+}

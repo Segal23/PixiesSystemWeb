@@ -1,0 +1,23 @@
+@media only screen and (min-width: 768px) {
+    
+    /*----- PORTADA 768px -----*/
+    .seccion-portada-home{
+        background-image: url("../assets/portada/portada-home4b.jpg") !important;
+    }
+
+    .seccion-portada-contacto{
+        background-image: url("../assets/portada/portada-contacto4b.jpg");
+    }
+
+    .seccion-portada-nosotros{
+        background-image: url("../assets/portada/portada-nosotros4.jpg") !important;
+    }
+
+    .seccion-portada-servicios{
+        background-image: url("../assets/portada/portada-servicios4.jpg") !important;
+    }
+
+    .seccion-portada-partners{
+        background-image: url("../assets/portada/portada-partners4b.jpg") !important;
+    }
+}

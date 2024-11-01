@@ -1,0 +1,38 @@
+@import "../utilities/variables";
+
+//bordes botón menú hamburguesa
+.border-cyan{
+    border: $hdr-border-cyan !important;
+
+}
+
+//border bottom del nav
+.border-bt-cyan{
+    border-bottom: $hdr-border-cyan !important;
+}
+
+//font color del menú
+.fc-cyan{
+    color: $hdr-fc !important;
+}
+
+//font color del menú activo
+.fc-cyan-active{
+    color: $hdr-fc-active !important;
+    background-color: $hdr-bgc-mnu-active;
+}
+
+nav{
+    ul{
+        li{
+            a{
+                &:hover{
+                    background-color: $body-fc;
+                    border: $hdr-mnu-border;
+                    border-radius: $hdr-mnu-border-r;
+                    padding: $hdr-mnu-padding;
+                }
+            }
+        }
+    } 
+}

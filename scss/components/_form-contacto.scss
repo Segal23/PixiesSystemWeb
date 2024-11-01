@@ -1,0 +1,54 @@
+.form-contacto{
+    background-color: #fff9;
+    div{
+        h3{
+            padding: 10px;
+            font-size: 2.8em;
+        }
+    }
+
+    form{
+        margin: 0 1px 0 1px;
+        input{
+            background-color: #6babbb88;
+            color:#19393f;
+        }
+
+        div:nth-child(4){
+            select{
+                background-color: #6babbb88;
+                color:#19393f;
+            }
+        }
+
+        
+        textarea{
+            background-color: #6babbb88;
+            color:#19393f;
+            height: 200px;
+        }
+    
+        div:nth-child(6){
+                display: flex;
+                justify-content: star;
+                align-items: baseline;
+    
+                label{
+                    margin-left: 5px;
+                    font-size: 1.6em;
+                } 
+        }
+
+        div:last-child{
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+            button{
+                width: 50%;
+                background-color: #3335;
+                color: #fffc;
+                font-weight: bold;
+            }
+        }
+    }
+}

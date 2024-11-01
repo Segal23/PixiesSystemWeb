@@ -1,0 +1,25 @@
+@import "../utilities/mixin";
+
+.seccion-portada-home{
+    @include portada("../../assets/portada/portada-home1b.jpg");
+}
+
+.seccion-portada-contacto{
+    @include portada("../../assets/portada/portada-contacto1b.jpg");
+    
+}
+
+.seccion-portada-nosotros{
+    @include portada("../../assets/portada/portada-nosotros1.jpg");
+    
+}
+
+.seccion-portada-servicios{
+    @include portada("../../assets/portada/portada-servicios1.jpg");
+    
+}
+
+.seccion-portada-partners{
+    @include portada("../../assets/portada/portada-partners1b.jpg");
+    
+}

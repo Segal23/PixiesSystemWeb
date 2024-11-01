@@ -1,0 +1,28 @@
+@import "../utilities/mixin";
+
+
+.seccion-contenido-home{
+    @include contenido;
+    .container-img{
+        @include grid-template-img;
+    }
+    p:last-child{
+        margin-top: 10px;
+    }
+}
+
+.seccion-contenido-contacto{
+    @include contenido;
+}
+
+.seccion-contenido-nosotros{
+    @include contenido;
+}
+
+.seccion-contenido-servicios{
+    @include contenido;
+}
+
+.seccion-contenido-partners{
+    @include contenido;
+}

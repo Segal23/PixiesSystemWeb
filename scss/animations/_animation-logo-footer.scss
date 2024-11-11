@@ -1,0 +1,42 @@
+.logo-pixies-f{
+    &:hover{
+        animation: latir 3s linear;
+}   
+
+@keyframes latir {
+    0%{
+        transform: scale(1.5, 1.5);
+    }
+    10%{
+        transform: scale(2, 2);
+    }
+    20%{
+        transform: scale(1, 1);
+    }
+    30%{
+        transform: scale(1.5, 1.5);
+    }
+    40%{
+        transform: scale(2, 2);
+    }
+    50%{
+        transform: scale(1.5, 1.5);
+    }
+    60%{
+        transform: scale(1, 1);
+    }
+    70%{
+        transform: scale(1.5, 1.5);
+    }
+    80%{
+        transform: scale(1, 1);
+    }
+    90%{
+        transform: scale(1.25, 1.25);
+    }
+    100%{
+        transform: scale(1, 1);
+    }
+}
+}
+

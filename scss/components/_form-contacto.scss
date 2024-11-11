@@ -10,21 +10,18 @@
     form{
         margin: 0 1px 0 1px;
         input{
-            background-color: #6babbb88;
-            color:#19393f;
+            @extend .colors;
         }
 
         div:nth-child(4){
             select{
-                background-color: #6babbb88;
-                color:#19393f;
+                @extend .colors;
             }
         }
 
         
         textarea{
-            background-color: #6babbb88;
-            color:#19393f;
+            @extend .colors;
             height: 200px;
         }
     

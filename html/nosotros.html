@@ -11,6 +11,8 @@
     <!--Link a font-awsome para los íconos de las redes-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
+    <!--Link a la hoja de stilos de AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!--Link a hoja de estilos-->
     <link rel="stylesheet" href="../css/styles.css">
@@ -25,7 +27,7 @@
             <div class="container-fluid">
                 
                 <!--Logo de Pixies-->
-                <img src="../assets/logo_pixies_cyan_gris.png" alt="Logo Pixies" title="Logo de Pixies"  width="50" height="60">
+                <img src="../assets/logo_pixies_cyan_gris.png" alt="Logo Pixies" title="Logo de Pixies"  width="50" height="60" class="logo-pixies-h">
 
                 <!--Botón del Menú hamburguesa-->
                 <button class="navbar-toggler border-cyan" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -101,7 +103,7 @@
                 En Pixies, nuestra misión se apoya en tres pilares esenciales que guían cada aspecto de nuestro trabajo. Estos principios reflejan nuestro compromiso con la innovación, la cercanía con nuestros clientes y la excelencia en cada proyecto que emprendemos. Creemos que, al mantenernos fieles a estos valores, creamos un impacto duradero y positivo en los negocios de quienes confían en nosotros.
             </p>
 
-            <h4>¡Click en el carousel para ver cada uno de nuestros pilares!</h4>
+            <h4 data-aos="flip-left">¡Click en el carousel para ver cada uno de nuestros pilares!</h4>
 
             <!--Carousel de Pilares de Pixies-->
             <div id="carouselExampleIndicators" class="carousel slide">
@@ -192,7 +194,7 @@
                 <div class="text-center mb-2 mt-3">
                     
                     <!--Logo de Pixies-->
-                    <img src="../assets/logo_pixies_cyan_gris.png" alt="Logo Pixies" title="Logo de Pixies" width="50" height="60" class="mb-4">
+                    <img src="../assets/logo_pixies_cyan_gris.png" alt="Logo Pixies" title="Logo de Pixies" width="50" height="60" class="mb-4 logo-pixies-f">
                     <p>2025 Copyright Pixies Systems. Todos los derechos reservados</p>
                 
                 </div>
@@ -204,6 +206,15 @@
 
     <!--Link a los scripts de Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!--Link a los scripts de AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--Script de AOS-->
+    <script>
+        AOS.init();
+    </script>
+
 
 </body>
 </html> 

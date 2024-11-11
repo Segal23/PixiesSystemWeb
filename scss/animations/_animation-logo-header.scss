@@ -1,0 +1,33 @@
+.logo-pixies-h{
+    &:hover{
+        animation: girarYRebote 3s ease-out;
+    }
+}
+
+
+@keyframes girarYRebote{
+    0%{
+        transform: rotate3D(1, 1 , 1 , 3600deg);
+    }
+    59%{
+        transform: rotate3D(0, 0 , 0 , 0);
+    }
+    60%{
+        transform: rotate3D(1, 1 , 0 , -120deg);
+    }
+    68%{
+        transform: rotate3D(1, 1 , 0 , 120deg);
+    }
+    76%{
+        transform: rotate3D(1, 1 , 0 , -60deg);
+    }
+    84%{
+        transform: rotate3D(1, 1 , 0 , 60deg);
+    }
+    92%{
+        transform: rotate3D(1, 1 , 0 , -30deg);
+    }
+    100%{
+        transform: rotate3D(1, 1 , 0 , 30deg);
+    }
+}

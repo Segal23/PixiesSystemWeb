@@ -1,4 +1,6 @@
+@use "./variables" as vars;
+
 .colors{
-    background-color: $body-bgc;
-    color:$body-fc;
+    background-color: vars.$body-bgc;
+    color: vars.$body-fc;
 }

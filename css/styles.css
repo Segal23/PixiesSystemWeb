@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.colors, .form-contacto form textarea, .form-contacto form div:nth-child(4) select, .form-contacto form input {
+.colors, .form-contacto form input, .form-contacto form div:nth-child(4) select, .form-contacto form textarea {
   background-color: rgba(107, 171, 187, 0.5333333333);
   color: #19393F;
 }

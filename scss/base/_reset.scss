@@ -1,4 +1,4 @@
-@import "../utilities/variables";
+@use "../utilities/variables" as vars;
 
 //RESET
 *{
@@ -8,8 +8,8 @@
 
 //BODY
 body {
-    background-color: $body-bgc;
-    font-family: $body-ff;
-    font-size: $body-font-size;
-    color: $body-fc;
+    background-color: vars.$body-bgc;
+    font-family: vars.$body-ff;
+    font-size: vars.$body-font-size;
+    color: vars.$body-fc;
 }

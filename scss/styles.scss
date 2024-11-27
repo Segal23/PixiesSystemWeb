@@ -1,31 +1,23 @@
-//variables
-@import "utilities/variables";
-
-//mixin
-@import "utilities/mixin";
-
-@import "utilities/extend";
-
 //componnentes
-@import "components/form-contacto";
-@import "components/accordion";
+@use "components/form-contacto";
+@use "components/accordion";
 
 //base
-@import "base/reset";
+@use "base/reset";
 
 //animations
-@import "animations/animation-logo-footer";
-@import "animations/animation-logo-header";
+@use "animations/animation-logo-footer";
+@use "animations/animation-logo-header";
 
 //layouts
-@import "layouts/header";
-@import "layouts/footer";
-@import "layouts/portadas";
-@import "layouts/contenidos";
-@import "layouts/tarjetas";
+@use "layouts/header";
+@use "layouts/footer";
+@use "layouts/portadas";
+@use "layouts/contenidos";
+@use "layouts/tarjetas";
 
 //media-queries
-@import "media-queries/media-query-480";
-@import "media-queries/media-query-640";
-@import "media-queries/media-query-768";
-@import "media-queries/media-query-1024";
+@use "media-queries/media-query-480";
+@use "media-queries/media-query-640";
+@use "media-queries/media-query-768";
+@use "media-queries/media-query-1024";

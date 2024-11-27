@@ -1,4 +1,4 @@
-@import "../utilities/mixin";
+@use "../utilities/mixin" as *;
 
 .seccion-portada-home{
     @include portada("../assets/portada/portada-home1b.jpg");
